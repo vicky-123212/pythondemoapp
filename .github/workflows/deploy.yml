@@ -60,4 +60,4 @@ jobs:
       - name: Deploy to EKS
         run: |
           kubectl apply -f deployment.yaml -n new
-          kubectl rollout status deployment/$DEPLOYMENT_NAME
+         
