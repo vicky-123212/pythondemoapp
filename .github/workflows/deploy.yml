@@ -56,7 +56,7 @@ jobs:
       - name: Update kubeconfig
         run: |
           aws eks update-kubeconfig --name $CLUSTER_NAME --region us-east-2
-          kubectl rollout status deployment my-app -n my-namespace
+          kubectl rollout status deployment my-app -n new
       
 
   
